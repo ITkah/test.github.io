@@ -1,0 +1,42 @@
+.slide-product {
+    .owl-theme .owl-nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -215px;
+        @media (max-width: 576px) {
+            top: 0;
+            justify-content: space-around;
+        }
+    }
+    .owl-prev {
+        position: relative;
+        left: -25px;
+        outline: none;
+        @media (max-width: 768px) {
+            left: -10px;
+        }
+        span {
+            font-size: 2.5rem;
+            color: #969595;
+        }
+    }
+    .owl-next {
+        position: relative;
+        right: -25px;
+        outline: none;
+        @media (max-width: 768px) {
+            right: -10px;
+        }
+        span {
+            font-size: 2.5rem;
+            color: #969595;
+        }
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: transparent;
+        color: #969595;
+        text-decoration: none;
+        outline: none;
+    }
+}

@@ -1,0 +1,49 @@
+.main-slider {
+    img {
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .owl-theme .owl-nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -270px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .owl-prev {
+        position: relative;
+        left: -25px;
+        outline: none;
+        @media (max-width: 768px) {
+            left: -10px;
+        }
+        span {
+            font-size: 2.5rem;
+            color: #969595;
+        }
+    }
+    .owl-next {
+        position: relative;
+        right: -25px;
+        outline: none;
+        @media (max-width: 768px) {
+            right: -10px;
+        }
+        span {
+            font-size: 2.5rem;
+            color: #969595;
+        }
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: transparent;
+        color: #555759;
+    }
+}

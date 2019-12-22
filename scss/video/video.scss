@@ -1,0 +1,97 @@
+.video {
+    .video-slider {
+        margin-bottom: 45px;
+        @media (max-width: 990px) {
+            margin-bottom: 25px;
+        }
+    }
+    .video-box {
+        border: 1px solid #C4C4C4;
+        box-shadow: 0px 1px 5px rgba(35, 38, 39, .1);
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .video-box-info {
+            padding: 10px 15px;
+            .date {
+                font-size: .7rem;
+                margin-bottom: 7px;
+                color: #686666;
+            }
+            .info-text {
+                font-size: .87rem;
+                color: #3D3838;
+            }
+        }
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        background: transparent;
+        color: #3A4043;
+        font-weight: bold;
+    }
+    .owl-theme .owl-dots .active span {
+        color: #7342a2!important;
+    }
+    .owl-theme .owl-nav {
+        max-width: 220px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+    .owl-theme .owl-nav [class*=owl-] {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 1px 2.5px!important;
+        border: 1px solid #f4f4f4;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 0;
+        outline: none;
+        span {
+            position: relative;
+            top: -7px;
+        }
+    }
+    .owl-dots {
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: -28px!important;
+        @media (max-width: 576px) {
+            align-items: center;
+        }
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: #F4F4F4;
+        color: #555759;
+    }
+}
+
+.vidos-phone-box {
+    display: flex;
+    flex-direction: column;
+    a {
+        padding-left: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: .87rem;
+        color: #3A4043;
+        &::before {
+            content: url(../img/icon/phone.svg);
+            position: relative;
+            left: -5px;
+            top: 1px;
+        }
+    }
+}

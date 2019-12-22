@@ -1,0 +1,32 @@
+.bredcrumbs {
+    margin-bottom: 45px;
+    @media (max-width: 990px) {
+        margin-bottom: 30px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding: 0 10px 5px 0;
+            a {
+                font-size: .8rem;
+                color: #B0B0B0;
+                opacity: .8;
+            }
+            &::after {
+                content: '/';
+                color: #B0B0B0;
+                position: relative;
+                left: 18%;
+            }
+        }
+        li:last-child {
+            a {
+                opacity: 1;
+            }
+            &::after {
+                content: '';
+            }
+        }
+    }
+}

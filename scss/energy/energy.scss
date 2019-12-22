@@ -1,0 +1,18 @@
+.energy {
+    .energy-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 100%;
+            width: 100%;
+            transition: .3s;
+            @media (max-width: 576px) {
+                height: 300px;
+                max-width: 100%;
+                width: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
