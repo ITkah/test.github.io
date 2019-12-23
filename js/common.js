@@ -10,7 +10,6 @@ $(document).ready(function() {
         $(this).toggleClass("down-dis-act");
     });
 
-
     $(".call-dropdown-desk").on("click", function(e) {
         e.preventDefault();
         $(".dropdown-box-desk").slideToggle("fast");
@@ -228,6 +227,15 @@ $(document).ready(function() {
         }
     });
 
+    $('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+	});
+
     $(".modal-feedback-form").submit(function(e) {
         e.preventDefault();
 
@@ -250,6 +258,12 @@ $(document).ready(function() {
         });
 
         return false;
+    });
+
+    $('ul.comments-panel').on('click', 'li:not(.active)', function() {
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('div.comments').find('div.comments-content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
     $('.minus-btn').on('click', function(e) {
