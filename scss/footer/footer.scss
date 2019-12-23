@@ -42,10 +42,10 @@ footer {
             display: block;
         }
         @media (max-width: 768px) {
-            grid-column-start: 2; 
-            grid-column-end: 3; 
-            grid-row-start: 3; 
-            grid-row-end: 3; 
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 3;
             text-align: right;
         }
     }
@@ -54,8 +54,8 @@ footer {
         flex-direction: column;
         .state-link {
             margin-bottom: 10px;
-        }   
-        .state-link:last-child{
+        }
+        .state-link:last-child {
             margin-bottom: 0;
         }
     }
@@ -68,15 +68,15 @@ footer {
         width: 5%;
         @media (max-width: 768px) {
             width: auto;
-            grid-column-start: 1; 
-            grid-column-end: 2; 
-            grid-row-start: 3; 
-            grid-row-end: 3; 
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 3;
         }
         img {
             position: relative;
             left: -180px;
-            top: 65px;
+            top: 55px;
             @media (max-width: 990px) {
                 left: -200px;
             }
@@ -102,7 +102,6 @@ footer {
             }
         }
     }
-    
     .social-icon {
         display: flex;
         align-items: center;
@@ -115,8 +114,8 @@ footer {
             height: 15px;
             width: 15px;
         }
-        a:first-child{
-            &::before{
+        a:first-child {
+            &::before {
                 content: url(../img/icon/inst.svg);
             }
             &:hover {
@@ -125,8 +124,8 @@ footer {
                 }
             }
         }
-        a:last-child{
-            &::before{
+        a:last-child {
+            &::before {
                 content: url(../img/icon/fb.svg);
             }
             &:hover {
