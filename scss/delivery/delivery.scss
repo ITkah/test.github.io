@@ -1,0 +1,43 @@
+.delivery-pay-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 990px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .delivery-boxs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 40px;
+        @media (max-width: 990px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+        .delivery-title {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #4A146E;
+            @media (max-width: 990px) {
+                margin-bottom: 15px;
+            }
+        }
+        .delivery-text {
+            font-size: .8rem;
+            text-align: center;
+            color: #3A4043;
+            max-width: 300px;
+            @media (max-width: 380px) {
+                max-width: 100%;
+            }
+        }
+    }
+}
