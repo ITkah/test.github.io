@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    $(".autoriz-title").on("click", function(){
+        $(".autoriz-box").slideToggle();
+    });
+
     $(".lang-main").on("click", function() {
         $(".lang-box").slideToggle();
         $(this).toggleClass("down-dis-act");

@@ -1,18 +1,21 @@
-.order-container {
-    display: flex;
-    justify-content: space-between;
-    .orders-box {
-        width: 50%;
-        margin-right: 30px;
-    }
+.order {
+    .order-title {
+        font-size: 1rem;
+        color: #1A1A1A;
+        margin-bottom: 15px;
+        display: block;
+    }    
     .order-input {
         display: flex;
         flex-direction: column;
         margin-bottom: 15px;
         label {
-            font-size: .87rem;
+            font-size: 1rem;
             color: #3A4043;
             margin-bottom: 10px;
+            @media (max-width: 768px) {
+                font-size: .87rem;
+            }
         }
         input {
             width: 100%;
@@ -38,21 +41,7 @@
             height: 128px;
         }
     }
-    .orders-box:last-child{
-        margin: 0;
-    }
-    .doble-input {
-        display: flex;
-        justify-content: space-between;
-        .order-box {
-            width: 100%;
-            margin-right: 20px;
-        }
-        .order-box:last-child {
-            margin: 0;
-        }
-    }
-       
+
     .checkbox {
         display: inline-flex;
         margin-bottom: 25px;
@@ -124,5 +113,387 @@
     /*Adding focus styles on the outer-box of the fake checkbox*/
     .checkbox input[type="checkbox"]:focus + label::before {
         outline: #64378F;
+    }
+
+}
+
+.autoriz {
+    margin-bottom: 60px;
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+    .autoriz-title {
+        font-size: 1rem;
+        color: #1A1A1A;
+        margin-bottom: 25px;
+        span {
+            color: #6D3E9A;
+            font-size: .9rem;
+        }
+    }
+
+    .autoriz-box {
+        display: none;
+        padding: 20px;
+        border: 1px solid #C4C4C4;
+        box-shadow: 0px 1px 5px rgba(35, 38, 39, .1);
+        @media (max-width: 768px) {
+            padding: 15px;
+        }
+        p {
+            margin-bottom: 25px;
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+                font-size: .87rem;
+            }
+        }
+        .autoriz-box-input {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+            .order-input {
+                width: 50%;
+                margin-right: 30px;
+                margin-bottom: 20px;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                }
+            }
+            .order-input:last-child{
+                margin-right: 0;
+            }
+        }
+        .send {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            @media (max-width: 320px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+        button {
+            padding: 12px 50px;
+            @media (max-width: 768px) {
+                padding: 10px 30px;
+                margin-right: 15px;
+            }
+            @media (max-width: 320px) {
+                margin: 0 0 15px 0;
+            }
+        }
+        .checkbox {
+            margin: 0;
+            margin-left: 30px;
+            height: 25px;
+            position: relative;
+            top: 2px;
+            @media (max-width: 768px) {
+                margin-left: 0;
+            }
+        }
+    }
+    .forget {
+        font-size: .87rem;
+        color: #6D3E9A;
+    }
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    .orders-box {
+        position: relative;
+        width: 50%;
+        margin-right: 30px;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0;
+        }
+        .check-2 {
+            position: absolute;
+            top: -40px;
+            @media (max-width: 768px) {
+                position: relative;
+                top: 0;
+            }
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    .orders-box:last-child{
+        margin: 0;
+    }
+    .doble-input {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .order-box {
+            width: 100%;
+            margin-right: 20px;
+            @media (max-width: 768px) {
+                margin: 0;
+            }
+        }
+        .order-box:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.info-title-order {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #6D3E9A;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    p {
+        font-size: .9rem;
+        color: #8D8C8C;
+        width: 70%;
+        text-align: left;
+        @media (max-width: 768px) {
+            width: 60%;
+        }
+    }
+    p:last-child {
+        width: 30%;
+        @media (max-width: 768px) {
+            width: 40%;
+            text-align: right;
+        }
+    }
+}
+
+.info-order-container {
+    margin-bottom: 30px;
+    .info-order-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            color: #1A1A1A;
+            @media (max-width: 768px) {
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .info-sm-box {
+        width: 70%;
+        text-align: left;
+        @media (max-width: 768px) {
+            width: 60%;
+        }
+    }
+    .info-sm-box:last-child {
+        width: 30%;
+        @media (max-width: 768px) {
+            text-align: right;
+            width: 40%;
+        }
+    }
+    
+    input[type=checkbox], input[type=radio] {display: none;}
+
+    input[type=radio] + label:before {
+        content: "\2713";
+        color: transparent;
+        display: inline-block;
+        border: 1px solid #000;
+        font-size: 11px;    
+        border-radius: 50%;
+        height: 6px;
+        width: 5px;
+        transition: color ease .3s;
+        padding: 6px 7px 4px 4px;
+        line-height: 6px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        @media (max-width: 768px) {
+            line-height: 5px;
+        }
+    }
+
+    input[type=radio]:checked + label:before {
+        color: #000;
+    }   
+
+    label {
+        font-size: .8rem;
+    }
+
+
+}
+
+.transfer {
+    background: #ebe9eb;
+    padding: 10px;
+    border-radius: 5px;
+    p {
+        font-size: .9rem;
+        margin-bottom: 10px;
+        color: #1A1A1A;
+        a {
+            color: #93bad9;
+        }
+    }
+    label {
+        display: flex;
+    }
+    .btn-wrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media (max-width: 990px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 360px) {
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            font-size: .8rem;
+            padding: 10px 30px;
+            @media (max-width: 360px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .mess {
+        background: #dfdcde;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        margin-top: 15px;
+        position: relative;
+        &::before {
+            content: ''; 
+            position: absolute; 
+            top: -20px;
+            left: 20px;
+            border: 10px solid transparent; border-bottom: 10px solid #dfdcde;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.pass-container {
+    .pass-title {
+        font-size: 1rem;
+        color: #1A1A1A;
+        margin-bottom: 25px;
+        span {
+            color: #6D3E9A;
+            font-size: .9rem;
+        }
+    }
+
+    .pass-box {
+        p {
+            margin-bottom: 25px;
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+                font-size: .87rem;
+            }
+        }
+        .pass-box-input {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+            .order-input {
+                width: 50%;
+                margin-right: 30px;
+                margin-bottom: 20px;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                }
+            }
+            .order-input:last-child{
+                margin-right: 0;
+            }
+        }
+        .send {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            @media (max-width: 320px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+        button {
+            padding: 12px 50px;
+            @media (max-width: 768px) {
+                padding: 10px 30px;
+                margin-right: 15px;
+            }
+            @media (max-width: 320px) {
+                margin: 0 0 15px 0;
+            }
+        }
+        .checkbox {
+            margin: 0;
+            margin-left: 30px;
+            height: 25px;
+            position: relative;
+            top: 2px;
+            @media (max-width: 768px) {
+                margin-left: 0;
+            }
+        }
+    }
+    .forget {
+        font-size: .87rem;
+        color: #6D3E9A;
+    }
+    .order-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        label {
+            font-size: 1rem;
+            color: #3A4043;
+            margin-bottom: 10px;
+            @media (max-width: 768px) {
+                font-size: .87rem;
+            }
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px 15px;
+            background: #FEFEFE;
+            border: 1px solid rgba(121, 121, 121, .5);     
+        }
     }
 }
